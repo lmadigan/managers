@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 const CardSection = (props) => {
   return (
-    <View style={styles.containerStyle}>
+    <View style={[styles.containerStyle, props.style]}>
       {props.children}
     </View>
   );
@@ -22,3 +22,5 @@ const styles = {
 };
 
 export { CardSection };
+
+//style prop can take in an array, and anythng defined in the right will overwrite the left
