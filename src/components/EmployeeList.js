@@ -29,12 +29,10 @@ class EmployeeList extends Component {
   }
 
   renderRow(employee) {
-    console.log(employee);
     return <ListItem employee={employee}/>
   }
 
   render() {
-    console.log(this.props);
     return (
       <ListView
         enableEmptySections
